@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wetware - Paragent</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="description" content="Wetware: why IT design keeps failing — not because of incompetence or malice, but because the humans in the system were never the primary concern.">
+</head>
+<body>
+    <main>
+        <nav>
+            <a href="/" class="brand">Paragent</a>
+            <ul>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/notes/third-thoughts.html">Third Thoughts</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <div class="note-meta">Third Thoughts</div>
+            <h1>Wetware</h1>
+
+            <hr>
+
+            <h2>The Steelman</h2>
+
+            <p>I love computers. I have loved them since the beginning. I love elegant systems. I love code that does exactly what it should with minimum surface area — the kind that reads like a well-made sentence, where nothing is wasted.</p>
+
+            <p>TLS is such a thing. Most people have never heard of it. You use it every time you type a credit card number into a website, or check your bank balance on your phone. The little padlock in the corner of your browser is TLS at work. Cryptographic protocols are encrypting your connection invisibly, verifying you are talking to the right server, ensuring nobody can intercept what passes between you. The entire machinery is invisible. It makes no demands on you. You do not need to understand it. You do not need to do anything differently. It just works.</p>
+
+            <p>Nobody writes their TLS key on a sticky note. That is the point. The security is so deeply embedded in the system that the human using it is almost irrelevant to its operation. You could be a technology expert or someone who struggles to find the volume button. TLS protects you either way.</p>
+
+            <p>This piece is not an attack on technology. I believe in technology. I believe in what it can do when it is designed well.</p>
+
+            <p>This is an attack on a paradigm — a set of assumptions about how IT systems should work — that fails reliably, predictably, and at enormous cost. Not randomly. Not occasionally. Every single time humans enter the system in a way the designer did not anticipate.</p>
+
+            <p>The word for the humans in that sentence is wetware. Hardware is the machine. Software is the code. Wetware is you.</p>
+
+            <hr>
+
+            <h2>Where the Paradigm Breaks</h2>
+
+            <p>Hardware and software behave predictably within their tolerances. If you give a computer the same input twice, you get the same output twice. Wetware does not work that way. Humans are adaptive. When we encounter an obstacle, we route around it. When a system makes something impossible, we find another way to accomplish the task. We are not being stupid or malicious when we do this. We are being exactly what intelligent agents are — people who solve the actual problem in front of them, not the theoretical problem someone else imagined.</p>
+
+            <p>The IT paradigm treats this adaptability as a flaw to be managed. It should treat it as the constraint that disciplines good design. Every failure in this essay has the same structure: a constraint met a human, the human adapted, and the adaptation produced exactly the failure the constraint was designed to prevent.</p>
+
+            <p>The designer, having never seriously modelled what real people would actually do under pressure, built the attack surface themselves — and then handed it to whoever was waiting on the other side.</p>
+
+            <p>But this essay is not only about security. Security is just one corner of the same failure. Mandatory data fields are not a security measure. Forced software upgrades are not a security measure. The paradigm failing here is broader than security. It is the assumption, baked into IT design at every level, that users are problems to be managed rather than agents to be served. Security is where the failure is most dramatic. It is not where the failure ends.</p>
+
+            <hr>
+
+            <h2>The Accidental Conspiracy</h2>
+
+            <p>Before we look at specific failures, there is a structural question worth asking. Why does the IT paradigm keep producing these outcomes? Is it incompetence? Occasionally. Is it malice? Rarely. The real answer is more interesting and more disturbing.</p>
+
+            <p>Consider where the IT security industry comes from. It exists because there are skilled technical people who use their knowledge to break into systems, steal data, encrypt companies' files and demand ransom, and run fraud operations at industrial scale. These people — the bad actors — are technically sophisticated, often highly organised, and extraordinarily good at understanding how humans behave under friction. They have done the ethnography that the security designer refused to do. They know exactly what users will do when a password is too long to remember. They built their business model on it.</p>
+
+            <p>The bad actor creates the threat. The threat justifies the security industry. The security industry sells tools and consultants and certifications and compliance frameworks. The more complex the threat landscape, the larger the industry. The larger the industry, the more complex the compliance requirements. The more complex the compliance requirements, the more friction is imposed on users. The more friction is imposed on users, the more workarounds users invent. The more workarounds users invent, the more attack surface is created for the bad actor.</p>
+
+            <p>Nobody planned this. There is no meeting room where hackers and security consultants divide the spoils. But the structure is self-reinforcing and everyone inside it — except the user — has an incentive to keep it running. The bad actor needs victims. The security vendor needs threats. The compliance officer needs rules to enforce. The auditor needs complexity to audit.</p>
+
+            <p>The user needs to log in and get their work done. That person is the only one in the system with no structural power and no advocate.</p>
+
+            <p>This is not a conspiracy. It is emergent misalignment. It produces the same outcome as a conspiracy would, without requiring anyone to be evil. The Fuckwittery is structural. No malice necessary.</p>
+
+            <hr>
+
+            <h2>Six Failures, Six Steerings — and Don Norman</h2>
+
+            <p>Don Norman spent decades documenting the gap between how designers think systems work and how humans actually use them. His framework is descriptive — here is how design fails people. What follows maps his diagnosis onto IT design specifically, against six directions of adjustment from Paragentism called the Steerings.</p>
+
+            <p>Norman stopped at the diagnosis. The Steerings continue from there.</p>
+
+            <hr>
+
+            <h2>Steering 1 — Toward Agency</h2>
+
+            <p>TLS is the paradigm working. It is the standard every other piece of IT design should be held to. It expands what you can do — conduct financial transactions at a distance, communicate privately, store sensitive information — without requiring you to understand how it works or change how you behave. Norman's core principle: good design makes people more capable without demanding they become something they are not.</p>
+
+            <p>IT design in the paradigm we are examining does the opposite. It systematically makes users feel incompetent for the designer's failures.</p>
+
+            <p>Here is a concrete example. A software company's CRM — the database their sales team uses to manage customer relationships — required that every contact record include a date of birth and a start date with the firm. Both fields were mandatory. You could not save a record without them. The intention was to prevent incomplete data from corrupting reports.</p>
+
+            <p>But what actually happened? Sales staff, under pressure to log calls and close deals, did not have those dates for most contacts. So they entered January 1st, 1970 as the date of birth. They entered the current date as the start date. The field was filled. The record was saved. The data was now complete and entirely false. The mandatory field designed to prevent data corruption produced a database full of fictional birthdays.</p>
+
+            <p>The user did not feel incompetent in this situation. They felt resourceful. But the system's agency — its ability to produce meaningful outputs from its data — was quietly destroyed. Nobody in the organisation could trust a date of birth field again. The constraint that was supposed to protect the system eroded it instead.</p>
+
+            <p>Norman called this learned helplessness when it affects the user directly. They internalise the system's dysfunction as their own failure. They stop trying to use the system well and start trying to make the system stop complaining at them. Those are different tasks. One builds capability. One destroys it.</p>
+
+            <hr>
+
+            <h2>Steering 2 — Consider the Counterfactual</h2>
+
+            <p>This is where the paradigm's failure becomes structurally precise. The constraint does not merely fail to achieve its goal. It produces the exact opposite outcome by changing how users behave in response to it. The security measure is the vulnerability.</p>
+
+            <p>Consider what happened at one firm when remote workers needed to connect to the company's network via a VPN — a secure tunnel that encrypts traffic between an employee's machine and the office servers. The IT department generated a password for each user. The password was deliberately complex: long, random, impossible to remember, designed to resist any attempt to guess or brute-force it. So far, reasonable.</p>
+
+            <p>The password was sent by SMS to the user's mobile phone. The username was sent separately by email. This was deliberate — two different channels meant that intercepting one message would not give an attacker both credentials. Also reasonable in isolation.</p>
+
+            <p>But here is what actually happened. The user receives the SMS. They need to type that password into the VPN login screen on their laptop. The password is twenty characters of random letters, numbers, and symbols. It cannot be memorised. It cannot be copied from the phone and pasted into the laptop. So the user opens a notes application, or a Word document, or their email drafts folder, and types the password in there so they can read it while typing it into the VPN box. Or they photograph their phone screen. Or they email themselves the password.</p>
+
+            <p>Every one of those workarounds is less secure than simply having been sent the password by email in the first place. The SMS split-channel measure, the complexity requirement, the anti-paste design — each one individually made sense to someone optimising for a specific threat. Combined, they produced a user who stored an unmemorizable credential in an unprotected location accessible from any device. The security architecture donated the attack surface it was built to prevent.</p>
+
+            <p>Norman called this the Gulf of Evaluation — the chasm between the designer's mental model of how the system will be used and the operational reality of how it is actually used. In IT security, this gulf does not produce confusion. It produces vulnerability. The counterfactual — what will users actually do when we make this impossible? — was available to every designer in every case. It was simply never asked.</p>
+
+            <hr>
+
+            <h2>Steering 3 — Consider Appropriate Scale</h2>
+
+            <p>Norman observed that design constraints which work rationally at the level of an individual decision fail when applied uniformly across large populations, because the population's collective adaptive response is itself predictable — and that aggregate response degrades the system.</p>
+
+            <p>Password complexity rules are the cleanest example. The logic behind them is sound at the individual level. A complex password is harder to guess than a simple one. If you force users to include uppercase letters, numbers, and symbols, their passwords will be harder to crack. This is true.</p>
+
+            <p>But apply that rule to ten thousand users and watch what actually happens. Users cannot remember complex passwords, so they write them down. They cannot remember different complex passwords for every system, so they reuse the same one across all their accounts. When forced to change their password every ninety days, they change Password1! to Password2! and then to Password3!. When forced to use a symbol, they add an exclamation mark at the end of their usual word. The entire population converges on a small set of predictable strategies for complying with the rule while defeating its purpose.</p>
+
+            <p>The attacker knows this. It is not a secret. The predictable workarounds are built into attack toolkits. The complexity rule, applied at population scale, created a monoculture of circumvention that is more exploitable than simpler passwords would have been — because simpler passwords would at least have been varied.</p>
+
+            <p>The designer scoped the constraint to the individual decision and never looked at what ten thousand individual decisions looked like from above. The rule worked perfectly at the wrong scale.</p>
+
+            <hr>
+
+            <h2>Steering 4 — Consider Consumption</h2>
+
+            <p>Norman observed that design decisions consume future optionality — that each choice made now closes off choices that were available before. This is most visible in IT when systems accrete complexity over time, each addition made sense individually, but the aggregate produces something nobody would have designed if they had seen it whole.</p>
+
+            <p>Forced software upgrades are the clearest case. Every major software platform — operating systems, development tools, productivity suites — now operates on a model of continuous, non-optional updates. You do not choose when to upgrade. The upgrade arrives and installs itself, often overnight, often without warning about what has changed.</p>
+
+            <p>The cost of this to the user is rarely counted in any analysis. When an interface is redesigned, the user's navigational knowledge — built up through hundreds of hours of use, embodied in muscle memory, in the automatic reach for a menu that is now somewhere else — is destroyed without compensation. The user must relearn what they already knew. That is not a small cost. It is a transfer of the cost of the upgrade from the vendor who chose to make it to the user who had no choice but to absorb it.</p>
+
+            <p>And the upgrades are not neutral. Forced upgrade cycles permit vendors to release software before it is stable, knowing the install base will absorb the bugs and the complaints, and a patch will follow. They permit the introduction of changes users would have refused if offered the choice — new data collection, interface changes that benefit the vendor's business model over the user's workflow, deprecation of features that worked. The upgrade is mandatory. The user's preferences are not consulted. The consumption of their time, their learned capability, and their trust is treated as a resource the vendor is entitled to extract.</p>
+
+            <p>More upgrades have damaged machines and destroyed productive hours than the threats they claimed to address. That is not an argument against ever upgrading. It is an argument that the current model — mandatory, silent, vendor-timed — is designed for the vendor's convenience and the user pays the bill.</p>
+
+            <hr>
+
+            <h2>Steering 5 — Consider Others</h2>
+
+            <p>Norman's most direct and important claim: human error is a design failure, not a user failure. When systems consistently produce the same errors across different users, the error is in the system. The user is not the variable. The designer is.</p>
+
+            <p>OAuth is a protocol for authorising third-party applications to access data without sharing passwords. It is widely used, well-documented, and when it works, it works well. It requires that the redirect after authentication happens over HTTPS — an encrypted connection — rather than HTTP.</p>
+
+            <p>This is a reasonable security requirement in production. In development, it creates a specific problem. A developer building an application locally — on their own machine, in a controlled environment, connected to nothing outside their own network — cannot use HTTPS without setting up a certificate. Setting up a local certificate is a non-trivial process. It requires tools, configuration, and time. And sometimes the certificate has expired and the renewal is pending.</p>
+
+            <p>So the developer does what developers do. They install a tunnelling tool — a third-party service that creates a temporary HTTPS address pointing at the local development machine. The OAuth flow now runs through a service the developer does not control, has not audited, and cannot inspect. The workaround is demonstrably less secure than the original HTTP connection would have been, because at least that connection was contained within a controlled environment.</p>
+
+            <p>Microsoft scoped the rule to 'OAuth security policy.' The developer standing up a staging environment during a routine certificate delay was never in scope. The unit of design was the policy document. The human's task — get this working before the site launches — was irrelevant to whoever wrote the rule.</p>
+
+            <h3>2FA: Security Theatre With a Business Model</h3>
+
+            <p>Two-factor authentication is sometimes exactly what it claims to be. When you log in to your bank and a code is sent to your registered phone, the bank is verifying that the person entering your password also has physical possession of your phone. This is genuine security. A stolen password is not enough. An attacker also needs your device. That combination is meaningfully harder to compromise.</p>
+
+            <p>This is the legitimate case and it is real.</p>
+
+            <p>It is also, increasingly, not the primary reason 2FA gets deployed.</p>
+
+            <p>For a significant category of software — project management tools, design platforms, development environments, communication applications — the actual function of 2FA is to prevent you from sharing your login with your colleague, your partner, or the member of your team who just needs occasional access. One paid seat. One authenticated device. The friction is not pointed at an adversary. It is pointed at your household.</p>
+
+            <p>The vendor's assumption is that a shared account represents revenue they should have received but didn't. This assumption deserves examination.</p>
+
+            <p>For tools where the cost of serving one additional user approaches zero — no physical goods, no licensed content they are paying for on your behalf, no infrastructure that meaningfully scales with headcount — the shared account is not a lost sale. It almost certainly was never going to be a separate paid subscription. What it is, instead, is an unpaid distribution channel.</p>
+
+            <p>The person who borrows your login to try a tool builds familiarity with it. They develop opinions about it. They recommend it to their organisation. They become the internal advocate who eventually puts it on the procurement list. The platforms that grew fastest in the last decade — the ones that seemed to be everywhere before anyone decided to buy them — grew through exactly this mechanism. The shared account was not lost revenue. It was organic distribution that no marketing budget could have replicated.</p>
+
+            <p>There is a network effect at work too. The more people in your circle who know a tool, the more useful the tool becomes to everyone in that circle. A project management platform that only your paid subscribers know how to use is less valuable than one your whole extended team is fluent in — including the contractors, the occasional collaborators, the clients who need to view a document once. Friction that prevents sharing does not protect the network effect. It caps it.</p>
+
+            <p>The vendor who deploys 2FA as account-sharing prevention has made the same analytical error as every other designer in this essay. They modelled the system that suits them — the one where every user is a paid seat — and called it policy. The user bears the friction. The competitor with frictionless onboarding gets the organic growth. The users who would have become advocates instead hit a login wall and leave.</p>
+
+            <p>The Fuckwittery is not protecting anyone. It is taxing the legitimate user, capping the network that would have funded growth, and calling it security.</p>
+
+            <h3>The Compliance Paradox</h3>
+
+            <p>There is a final structural failure in the paradigm that rarely gets named directly. The premise of compliance-driven IT design is that more rules produce more security. Add a requirement. Close a gap. Enforce a standard. The system gets safer.</p>
+
+            <p>This is false above a certain threshold of complexity, and most large organisations crossed that threshold years ago.</p>
+
+            <p>Every rule added to a compliance framework is another item that can be failed. Every additional requirement creates new surface area for non-compliance. A ten-point compliance checklist can be examined carefully and satisfied completely. A two-hundred-point compliance checklist cannot be held in any single person's working memory. It will be partially satisfied, unevenly understood, and inconsistently applied — not because the people managing it are careless, but because the complexity of the framework itself has exceeded what human attention can reliably process.</p>
+
+            <p>The auditor arrives and finds violations. Not because the organisation became less secure. Because the framework became more complex. The audit is now a process of finding which rules were not followed, not a process of determining whether the organisation is actually protected. These are different questions. The compliance framework has drifted so far from its original purpose that passing the audit and being secure have become largely unrelated outcomes.</p>
+
+            <p>The organisation responds by hiring more compliance staff, purchasing more compliance tools, and adding more documentation requirements. The complexity increases. The probability of a clean audit decreases. More staff are hired. The cycle continues.</p>
+
+            <p>The user sitting at a keyboard, trying to do their job, experiences this as a continuous increase in friction with no visible connection to any actual protection. Because there frequently isn't one. The compliance framework is optimising for the audit. The audit is optimising for the compliance framework. The actual adversary is operating in the gap between them.</p>
+
+            <hr>
+
+            <h2>The Paradigm Failure</h2>
+
+            <p>IT design does not fail because designers forget about humans. It fails because the humans who matter most to the adversary — the users — matter least to the designer.</p>
+
+            <p>The adversary has done the ethnography. They know what users do when a password is too long. They know what happens when a mandatory field has no good answer. They know that developers under deadline pressure will find tunnels and workarounds. They built their attack strategies on the predictable human response to design friction. They are, in a dark way, the most attentive students of wetware in the entire ecosystem.</p>
+
+            <p>The designer has done the audit documentation. They know what controls need to be demonstrably in place. They know which fields need to be mandatory to satisfy the compliance requirement. They know which upgrade needs to ship before the review. The actual human using the system was never their primary concern, and the incentive structure they operate within never required them to make it so.</p>
+
+            <p>The result is a system optimised for the audit that gets audited and vulnerable to the adversary who was never in scope. The compliance officer is perfectly served. The user bears the cost. The attacker harvests what the designer built.</p>
+
+            <p>This is not conspiracy. It is emergent misalignment. Nobody planned it. Nobody had the structural incentive to stop it. The Fuckwittery is baked into the architecture of the industry itself.</p>
+
+            <hr>
+
+            <h2>Institutional Validation Arrives Late</h2>
+
+            <p>Ross Anderson, a professor of security engineering at Cambridge, established in 2001 that IT security spending systematically misallocates because the people who specify controls do not bear their costs. The economics were always wrong. The incentive structure was always misaligned. The analysis has been available for a quarter of a century. The industry has mostly continued as before.</p>
+
+            <p>In 2017, the National Institute of Standards and Technology — NIST — formally reversed its own password complexity guidance. The rules that produced the sticky note, the predictable substitution, the rotation cycle that increments the number at the end of last quarter's password. NIST had written those rules in 2003. The empirical evidence that they were producing the opposite of their intended effect had been accumulating for years before the reversal. Fourteen years of mandatory complexity, forced rotation, and special character requirements — fourteen years of sticky notes and Password1! — before the body that wrote the rules acknowledged they had been wrong.</p>
+
+            <p>Paragentism arrives at the same destination from first principles. A system that erodes agency to perform security is not a security system. It is security theatre with an expensive box office and an open back door.</p>
+
+            <p>TLS works because it was designed for the whole system. The hardware, the software, and the wetware. It asks nothing of the human that the human cannot effortlessly provide. It encrypts the connection invisibly and makes the security emergent from the design rather than dependent on the user's compliance with rules they cannot meaningfully follow.</p>
+
+            <p>That is the standard. Not aspirational. Already achieved, in 1999, by a protocol most users have never heard of and have never needed to think about.</p>
+
+            <p>Until IT design is held to it — until the unit of design is the whole system including the adaptive, creative, obstacle-routing human at the keyboard — the sticky note will outlast every policy written to replace it.</p>
+
+        </article>
+    </main>
+</body>
+</html>

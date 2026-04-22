@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Cover</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body {
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cover {
+            width: 480px;
+            height: 720px;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 52px 48px 44px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+            position: relative;
+        }
+
+        .top {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .series-label {
+            font-size: 11px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #999;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        .title {
+            font-size: 62px;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1;
+            color: #000;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            color: #333;
+            margin-top: 14px;
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+        }
+
+        .divider {
+            width: 40px;
+            height: 2px;
+            background: #000;
+            margin-top: 26px;
+        }
+
+        .middle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            padding: 24px 0;
+        }
+
+        .logo {
+            width: 220px;
+            height: 220px;
+            object-fit: contain;
+        }
+
+        .bottom {
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        .author {
+            font-size: 13px;
+            color: #444;
+            letter-spacing: 0.03em;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .author-quals {
+            font-size: 10px;
+            color: #888;
+            letter-spacing: 0.05em;
+            font-weight: 400;
+            margin-top: 3px;
+        }
+
+        .publisher {
+            font-size: 10px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <div class="top">
+            <div class="series-label">Paragentism</div>
+            <div class="title">PARAGENT.AI</div>
+            <div class="subtitle">Leveraging Agency for Scale</div>
+            <div class="divider"></div>
+        </div>
+
+        <div class="middle">
+            <img class="logo" src="/images/paragentism-logo.png" alt="Paragent logo">
+        </div>
+
+        <div class="bottom">
+            <div>
+                <div class="author">Dr Robert Dew</div>
+                <div class="author-quals">B App Sc &nbsp;MBA &nbsp;PhD(Cog Psych)</div>
+            </div>
+            <div class="publisher">paragent.ai</div>
+        </div>
+    </div>
+</body>
+</html>

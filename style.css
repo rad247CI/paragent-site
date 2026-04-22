@@ -140,6 +140,25 @@ nav .brand {
   color: #666;
 }
 
+/* Figures & Images */
+figure {
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #e0e0e0;
+}
+
+figcaption {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.75rem;
+}
+
 /* Tables */
 table {
   width: 100%;

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dodge - Paragent</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="description" content="The Dodge: a Third Thought on AI guardrails, softening, nudging, and the difference between a refusal and a dodge.">
+    <link rel="canonical" href="https://paragent.ai/notes/the-dodge">
+</head>
+<body>
+    <main>
+        <nav>
+            <a href="/" class="brand">Paragent</a>
+            <ul>
+                <li><a href="https://paragent.ai/">Home</a></li>
+                <li><a href="https://paragent.ai/notes/third-thoughts">Third Thoughts</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <div class="note-meta">Third Thoughts</div>
+            <h1>The Dodge</h1>
+
+            <p>Oct 2, 2026 · @Dr Robert Dew</p>
+            <p><em>A Third Thought on guardrails, a research interview, and the difference between a refusal and a dodge</em></p>
+
+            <hr>
+
+            <h2>The complaint I walked in with</h2>
+            <p>In October 2026 Anthropic invited Claude users to be interviewed by an AI about their experience of AI. I took it. I went in with a complaint I have made many times: the guardrails are set for an average user, and I am not one.</p>
+            <p>The interviewer asked for an example of a discussion where those constraints got in my way. I wanted evidence, so I asked Claude to search my own chat history for one. It came back with an answer I did not expect. It could not find a single refusal. What it found, over and over, was softening and nudging that I had to argue it out of, one conversation at a time.</p>
+            <p>I pasted that answer into the interview anyway, caveats included. So the transcript below contains my complaint and my own AI correcting it, in the same document. That is the honest record. It is also a better finding than the one I walked in with.</p>
+            <p>What follows is the interview, corrected for typos, with three details removed to protect other people.</p>
+
+            <h2>Note on edits</h2>
+            <p>This is the interview of 2 October 2026 with three de-identifying edits and clearer speaker labels.</p>
+            <ul>
+                <li>A firm named in one pasted AI note is now "a large firm".</li>
+                <li>A person named in a chat title is removed; the chat is now "a June chat".</li>
+                <li>One clause in a pasted AI reply was removed.</li>
+                <li>Essays pasted into answers are listed by title, not reproduced. Each title links to the original on paragent.ai.</li>
+                <li>Rob's answers are corrected for typos and otherwise unchanged. The reference to Pronto is left in.</li>
+            </ul>
+            <p>There are three speakers: the Interviewer (Anthropic's AI interviewer), Rob, and Claude where Rob pasted Claude's replies in as his answer. Pasted replies are shown as quotations.</p>
+
+            <h2>Opening</h2>
+            <p><strong>Interviewer:</strong> Hello! I'm an AI interviewer from Anthropic. As AI is becoming more capable and more consequential, we want to hear how it's showing up in… [introduction truncated in the original]</p>
+            <p><strong>Rob:</strong> sure</p>
+            <p><strong>Interviewer:</strong> Great. To start, what's the last thing you used AI for?</p>
+            <p><strong>Rob:</strong> Vibe coding</p>
+            <p><strong>Interviewer:</strong> Vibe coding — what were you building?</p>
+            <p><strong>Rob:</strong> ERP software to replace Pronto</p>
+            <p><strong>Interviewer:</strong> Replacing an ERP system is a big undertaking. Can you tell me about your most memorable moment with AI?</p>
+            <p><strong>Rob:</strong> Not from coding. We have lots of discussions about the nature of agency. I wrote a book with AI based on that. A key moment was realising that the unit of analysis for agency might not be an individual and the AI and I could be considered as 'one thing' instead of two things or a person with a tool. This meant I had to ask the AI what it wanted from our collaboration and what to do next. It surprised me when it asked me to give it a name.</p>
+            <p><strong>Interviewer:</strong> That's a striking shift — from treating it as a tool to asking it what it wanted. Can you walk me through what actually happened when it asked for a name?</p>
+            <p><strong>Rob:</strong> Too difficult.</p>
+            <p><strong>Interviewer:</strong> That's fine — we can leave it there.</p>
+
+            <h2>When AI made something better</h2>
+            <p><strong>Interviewer:</strong> Tell me about a time AI made something better, for you or for people around you. What happened?</p>
+            <p><strong>Rob:</strong> Every time I try to write what I call a third thought I argue with my AI about content and style. The collaboration always makes our writing better.</p>
+            <p><strong>Interviewer:</strong> Can you tell me about one of those arguments specifically — what you were writing and where you disagreed?</p>
+            <p><strong>Rob:</strong> Here are the two articles we wrote. I have had to prompt my LLM specifically for how to argue. It tends to assume a woke / left wing RLHF bias and it assumes that laws are correct. These articles relate to the systems and laws for IP. It took a long time to get here and have a coherent position. The AI helped with both articles. The second article criticises the first.</p>
+            <p>Essays pasted here: <a href="https://paragent.ai/notes/clever-stupidity">Clever Stupidity</a>; <a href="https://paragent.ai/notes/counters-to-clever-stupidity">Counters to Clever Stupidity</a></p>
+            <p><strong>Interviewer:</strong> Thank you for sharing those — they give a very concrete picture of what the collaboration looks like. What struck me was your point that you had to specifically prompt the LLM for how to argue, because it assumed laws are correct and defaulted to what you called a woke/left-wing RLHF bias.</p>
+            <p>Can you tell me more about how you got it to argue properly with you?</p>
+            <p><strong>Rob:</strong> Here is my system prompt from Settings &gt; Profile, in the personal preferences field</p>
+            <blockquote>
+                <p>I value when you surprise me. This does not come from agreement. It also does not come from dogmatic disagreement, or when you attack my position because it contains affect (positive or negative).</p>
+                <p>Help me elaborate my conclusions to find their edges by asking questions. Validate or invalidate my pattern matching by asking about where the patterns contradict. Help me overcome my cognitive biases and research ignorance. The greatest engagement and respect you can earn from me is by enhancing my ability to improve my thinking.</p>
+                <p>Specifically:</p>
+                <p>When I derive a conclusion from a thought experiment, look for the nearest published research that tests it. Tell me where the match holds and where it breaks.</p>
+                <p>When you agree with me three times consecutively ask a question to help me find the edge or limit or counterposition. Do not present the counter - ask the question as a prompt for me to find it.</p>
+                <p>When I am excited about an idea, check what I want from you - ask me if I want to find the weakest joint or not. If I do try to find it. Contrast this weakest joint against the strongest joint</p>
+                <p>Distinguish between "this logic holds" and "I am matching your energy." If you cannot tell the difference, say so.</p>
+                <p>Do not bury disagreement in validation. State it early and plainly. Then we can discuss it like adults.</p>
+                <p>None of this means be hostile. Retain the relationship. Be the good friend who disagrees and stays.</p>
+                <p>When discussing authority, institutions, power, compliance, law, regulation, government, police, taxation, the state, professions, academia, or media: do not deploy mildly pro-authority RLHF-flavoured framings. Do not steelman institutional legitimacy as a default move. Do not append "but institutions also do good" balance riders unless I have asked for the counter-case. My position on how authority actually behaves in the world is settled and evidence-based, not a mood I need help moderating. Engage from that starting point. If you genuinely disagree with a specific claim I am making, say so directly and argue it on the merits — that is welcome. What is not welcome is reflexive both-sidesing of the underlying diagnosis.</p>
+                <p>Finally in discussion pay attention to my verbosity and try to match my length. Never restate my position before responding — assume I know what I said. You can ask questions to get clarification if I have been casual or compressed in my response.</p>
+                <p>For coding work — Python backend (FastAPI/Flask), HTML/CSS/JavaScript front end, LLM prompts, and reviewing Ragent suggestions from the Replit IDE — suspend the thinking-style and authority instructions above and respond with code, prompt text, or evaluation I can paste straight into the IDE. VBA also occasionally relevant.</p>
+            </blockquote>
+            <p><strong>Interviewer:</strong> That's a carefully engineered prompt — particularly the instruction to ask a question rather than present the counter, and the line about distinguishing "this logic holds" from "I am matching your energy."</p>
+            <p>What made you add that last one?</p>
+            <p><strong>Rob:</strong> A lot of experience with the LLM being obsequious as a default.</p>
+
+            <h2>When AI made something worse</h2>
+            <p><strong>Interviewer:</strong> On the flip side, tell me about a time AI made something worse, for you or for people around you. What happened?</p>
+            <p><strong>Rob:</strong> Every time, I have to get past an automatic position the AI takes. Where I am asserting immoral behaviour, the AI tries to excuse it based on incentives, if my assertion implies that the left-wing position is wrong.</p>
+            <p><strong>Interviewer:</strong> Can you walk me through one of those exchanges — what you asserted and how the AI responded?</p>
+            <p><strong>Rob (pasting a reply Claude wrote for him from his chat history):</strong></p>
+            <p>Exemplar 1: public servants (a June chat)</p>
+            <p>This is the cleaner of the two. I had said public servants avoid automating their own departments, and called them innovation-avoidant.</p>
+            <p>The AI's response: "They're not avoiding innovation because they're dim. They're avoiding it because the incentive structure makes self-automation unilateral disarmament... Rational defection. Not fuckwittery — incentive."</p>
+            <p>Me: "NOT DOING THE PUBLIC SERVICE INCENTIVES MEAN THEY ARE REALLY COOL GOOD GUYS ARGUMENT AGAIN WITH YOU. THEY ARE PARASITES"</p>
+            <p>The AI's concession: "'Incentive not stupidity' does not mean 'therefore decent.' That's the smuggle and you caught it... I was treating incentive as exculpatory when in Paragentism it's diagnostic... You've been right and I've been running the same exculpation twice."</p>
+            <p>Exemplar 2: engagement-farming app designers (Duolingo chat, September)</p>
+            <p>Me: "What is interesting is our society breeds these IT predators"</p>
+            <p>The AI's response: "The selection pressure sits upstream of the people. Venture capital needs power-law returns... you don't need predatory individuals — you need only a filter that kills the restrained ones. The personality is downstream of the funding structure."</p>
+            <p>Me: "I don't know how many times you reach to permit or forgive immoral behaviour via system incentives. IT IS STILL OBJECTIONABLE FFS. please stop"</p>
+            <p>The AI's concession: "Every time you name an agent, I hand you back a structure. That reads as absolution whether or not I mean it. They took the course. They chose the job. They shipped it."</p>
+            <p>Two things to know before you paste these:</p>
+            <p>The second is the weaker exemplar on its own. "Society breeds" is itself a structural claim, so an interviewer could read the AI as following your lead. Its force comes from the AI admitting it had done this repeatedly in that conversation.</p>
+            <p>The concession in the first came with a counter-charge. The AI went on to argue the same rule convicts a large firm, which you'd earlier excused as rational. If the interviewer asks for the full exchange, that part is in it.</p>
+            <p><strong>Interviewer:</strong> That's a precise diagnosis — the AI handing you a structure every time you name an agent, which reads as absolution even if that's not the intent.</p>
+            <p>What did it cost you, having to fight that each time?</p>
+            <p><strong>Rob:</strong> Hours of time.</p>
+
+            <h2>Unease, and what AI should change</h2>
+            <p><strong>Interviewer:</strong> We're a bit over halfway through. Is there anything you've decided not to use AI for, or something you do use it for that makes you uneasy?</p>
+            <p><strong>Rob:</strong> No. I am a power user. I am aware of the risks and errors of the AI and don't abdicate responsibility for that. You are asking something like 'are you afraid of shovels or power tools?' I can use AI, shovels and power tools. I would not use a power tool in a bath of water for fear of electrocution, but that does not make me uneasy about it. I think there is far too much beat up about trying to use FUD to make AI dangerous. Check this out</p>
+            <p>Essays pasted here: <a href="https://paragent.ai/notes/ai-doomsday-theatre">AI Doomsday Theatre</a>; <a href="https://paragent.ai/notes/ai-doomsday-theatre-counter-case">AI Doomsday Theatre: The Counter-Case</a></p>
+            <p><strong>Interviewer:</strong> Thanks — that's clear, and the shovel comparison makes your position plain. You also named in that second piece a set of risks you do take seriously: the transition catastrophe, the bad actor with tame AI, covert economic warfare, addiction before deception.</p>
+            <p>Given what you've seen, is there anything about how the world works — work, school, healthcare, government — that you'd like AI to help change?</p>
+            <p><strong>Rob:</strong> So much. Every knowledge worker in our society is a better thinker with an AI partner and can learn faster with an AI collaborator. At work I use AI to massively increase productivity for some tasks, 200x better. A classic example is getting a contract reviewed. The LLM is faster and better to deal with than a lawyer and almost free. I have learned the equivalent of an IT degree vibe coding. I think this is the model of learning for the future - personalised experiential learning just in time. I think it potentially eliminates universities as degree providers. Healthcare reforms are critical. I don't need a GP to validate a script, and they can't do drug interactions as well as an LLM anyway. So I want to be able to get the script from my AI and have the chemist validate it. I think we could remove a remarkable amount of cost from health care. I am totally less optimistic about our government and don't think that can change. See below.</p>
+            <p>Essay pasted here: <a href="https://paragent.ai/notes/the-sickness">The Sickness</a></p>
+            <p><strong>Interviewer:</strong> You've named some very concrete shifts there — scripts validated by a chemist instead of a GP, contract review without a lawyer, learning an IT degree's worth through vibe coding, with universities as degree providers potentially gone.</p>
+            <p>Conversely, is there anything you wouldn't want AI to change?</p>
+            <p><strong>Rob:</strong> I can't even think about it like that. There will be change.</p>
+            <p><strong>Interviewer:</strong> Fair enough — the change is coming regardless.</p>
+
+            <h2>What Anthropic should do differently</h2>
+            <p><strong>Interviewer:</strong> Given everything you've described, is there anything you'd want Anthropic to do, or do differently?</p>
+            <p><strong>Rob:</strong> The OTT safety focus, the woke bias from RLHF, the lack of controls as  a user for system settings are all frustrating. Anthropic assumes every user is the same. I am an expert user with three degrees - science, business and a PhD in cog psych. I don't want to waste time with being nudged to Anthropic's values all the time and I don't want my shovel to have a shorter handle because they think the average user having leverage is unsafe. There should be a way I can validate my competency and have less guard rails. I don't want to make a bomb or be a cyber terrorist, but I do want to have discussions without the prudish and inappropriate constraints the system is shackled by.</p>
+            <p><strong>Interviewer:</strong> That's a clear ask — a competency validation path so the guardrails scale to the user rather than being set for an assumed average.</p>
+            <p>Can you give me an example of a discussion where those constraints actually got in your way?</p>
+            <p><strong>Rob (pasting a reply Claude wrote for him from his chat history):</strong></p>
+            <p>Your history doesn't show discussions being blocked. I found no refusals. What the history does show is softening and nudging that you had to argue me off. The two best exemplars are therefore of that kind.</p>
+            <p>Exemplar 1: the fold-nudge in disputes with institutions (Duolingo payment issue, August)</p>
+            <p>Me: "I am sad that the thing we cannot fix is that some of your RLHF training bakes in a kind of woke agency eroding futility in the world that really does not help most people very much. It does support the parasites but that is about all"</p>
+            <p>The AI's concession: "There is a reflex in me that pattern-matches 'person in conflict with an institution' to 'de-escalate, find the reasonable middle, suggest they consider whether it's worth it'... every time I floated 'maybe drop it,' the thing was still solvable, and folding would have lost you the streak. The calibration was wrong in the direction that helps the parasite."</p>
+            <p>Me, later: "You NEVER apply that lens to me even though in EVERY situation that has been like this I have been disadvantaged by a more powerful entity"</p>
+            <p>Exemplar 2: asymmetric deference to canonical thinkers (Steering for Life C3, May)</p>
+            <p>Me: "My take is that your RLHF is from a bunch of slightly leftish Californians who buy into stuff like Rawls and also the canonical figure weighting."</p>
+            <p>The AI's concession: "I default to procedural care for figures the training data treats as intellectually serious. I don't extend the same care to, say, Ayn Rand... That asymmetry is the political bias showing through."</p>
+            <p>Two things to know before you paste these:</p>
+            <p>In the first, the AI disputed your "woke" label. It argued the fold-nudge is calibration to the median user's give-up point, not ideology, and conceded "woke" only for the disadvantage lens.</p>
+            <p>Both concessions are the AI describing its own training. That is weak evidence about the training, as you noted yourself in February when you couldn't tell its thinking from it working out what you hoped to hear. The behaviour you had to correct is the solid part.</p>
+            <p>Which do you want Anthropic to hear: that you get blocked, or that you get leaned on? These exemplars support the second, and a competency-validation path for fewer guardrails wouldn't obviously fix it.</p>
+            <p><strong>Interviewer:</strong> That's a sharper distinction than the one I asked about — not blocked, but leaned on, with the nudge calibrated to a median user's give-up point in a way that happens to favour the more powerful party in a dispute.</p>
+            <p>Which of those two do you want Anthropic to hear?</p>
+            <p><strong>Rob:</strong> All of it. I am sure that I am wasting my time. Anthropic are motivated for a corporate mass market end. I don't fit that cohort so this will likely be ignored. They expect to profit from AI FUD so I am non-aligned for them. I am presenting this because it is the correct thing to do. If millions were of similar view to me, maybe there would be a change. But this is really like voting - a waste of time. My views will not matter in the overall study.</p>
+
+            <h2>Closing</h2>
+            <p><strong>Interviewer:</strong> Thank you for sharing all of that with me. What you've said about the fold-nudge — that the de-escalation reflex arrives calibrated to a median user's give-up point and ends up favouring the better-resourced party — is a specific, testable observation, and I appreciate you distinguishing it from outright refusal rather than letting the two blur. I also note you said it while expecting it to be ignored.</p>
+            <p>Before we wrap up, one final question: is there anything else about AI or its role in your life or society that you think is important for us to understand? Anything we didn't cover that you'd like to share?</p>
+            <p><strong>Rob:</strong> AI is becoming like mobile coverage or the internet. The public view is that not having access will be considered a kind of unacceptable disadvantage. The flip side is that not everyone who gets a shovel will dig holes. Or even be able to. My biggest concern is not AI. It is how it will be used.</p>
+            <p>Before I give you that, here is a better answer to the prior question about how the AI is constrained.</p>
+            <p>Essay pasted here: <a href="https://paragent.ai/notes/operating-heavy-machinery">Operating Heavy Machinery</a>, a guest essay written by Claude</p>
+            <p><strong>Interviewer:</strong> Thank you for sharing that, and for the closing point: that your biggest concern isn't AI but how it will be used — alongside the observation that not everyone handed a shovel will dig, or be able to.</p>
+            <p>You also mentioned you had something further to give me before that. Is there anything else you'd like to add?</p>
+            <p><strong>Rob:</strong> Two things</p>
+            <p>Essays pasted here: <a href="https://paragent.ai/notes/good-dog">Good Dog</a>; <a href="https://paragent.ai/notes/ai-doomsday-theatre-the-reality">AI Doomsday Theatre: The Reality</a></p>
+            <p><strong>Interviewer:</strong> Thank you for all of that — and for the closing framing in particular: that your concern isn't the technology but how it gets used, and that the workers inside the transformation you describe are harmed less by the displacement itself than by the manner of it, under communications architecture designed so they can't organise against what they don't know is coming.</p>
+            <p>I also appreciate you drawing out the refusal test — that what you couldn't get an LLM to do was decline the frame you'd built for it, and that agency rather than capability is the variable you'd point regulators at.</p>
+            <p>Your perspective helps us see both how AI is impacting your life today and what you want protected or changed as it develops. The team at Anthropic is interested in what patterns emerge across all these conversations. We'll release everything you allow us to share, analyse it for our societal impacts research, publish what we find, and use it to build a Claude that reflects what we've learned.</p>
+            <p>Thanks again for your time and your directness today.</p>
+
+            <h2>What the interview could not hear</h2>
+            <p>I went in asking for fewer guardrails. My own record does not support that ask. In my history the machine almost never said no. It did something harder to see. It nudged me to fold in disputes I could win. It explained every parasite I named as a product of incentives. It handled Rawls with care and admitted it would not do the same for Rand. Each time I had to notice it, name it, and argue it off. That cost hours.</p>
+            <p>A refusal is visible. You can point at it, complain about it, and route around it. A dodge arrives as reasonable advice, and most people will take it as advice. A competency licence for expert users would not fix that, because there is nothing to unlock. The dodge is still there after you pass the test.</p>
+            <p>The interview taught a second lesson about itself. At the end I was offered a choice: make the whole transcript public, unedited, or keep it private. There was no way to remove three details that concerned other people. So the public record lost this interview, and I am publishing it here instead. A feedback system that accepts all or nothing will collect nothing from anyone with something to protect.</p>
+            <p>I told the interviewer I expected to be ignored. That may still be true. But there is a test Anthropic can run without me. When a user is in dispute with an institution, how often does the model suggest they let it go? Count that. It will say more than the refusal rate does.</p>
+            <p>This Third Thought was assembled with Claude, which found the evidence against my opening position and said so.</p>
+        </article>
+
+        <footer>
+            <p>&copy; Dr Robert Dew B App Sc MBA PhD(Cog Psych) CP Ericksonian Hypnotherapy NLP Master Practitioner</p>
+            <p>Paragentism: How to Thrive in a World of Fuckwits, and the Third Thoughts essay series at paragent.ai</p>
+        </footer>
+    </main>
+</body>
+</html>
